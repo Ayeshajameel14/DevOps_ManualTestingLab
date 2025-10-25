@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - DevOps Manual Testing Lab</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .dashboard {
+      text-align: center;
+      margin-top: 100px;
+    }
+
+    .dashboard h1 {
+      color: #b30059;
+    }
+
+    .dashboard button {
+      background-color: #b30059;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      margin-top: 20px;
+      cursor: pointer;
+    }
+
+    .dashboard button:hover {
+      background-color: #800040;
+    }
+  </style>
+</head>
+<body>
+  <div class="dashboard">
+    <h1>Welcome, Admin 👋</h1>
+    <p>You have successfully logged in to the DevOps Manual Testing Dashboard.</p>
+    <button id="logoutBtn">Logout</button>
+  </div>
+
+  <script>
+    document.getElementById("logoutBtn").addEventListener("click", function() {
+      alert("You have been logged out!");
+      window.location.href = "index.html";
+    });
+  </script>
+</body>
+</html>
